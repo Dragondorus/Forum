@@ -4,10 +4,13 @@ namespace Tests\Unit;
 
 use App\Models\Reply;
 use App\Models\User;
-use PHPUnit\Framework\TestCase;
+use Illuminate\Foundation\Testing\DatabaseMigrations;
+use Tests\TestCase;
 
 class ReplyTest extends TestCase
 {
+    use DatabaseMigrations;
+
     /** @test */
     public function it_as_an_owner()
     {
